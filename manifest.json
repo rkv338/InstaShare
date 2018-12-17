@@ -1,0 +1,30 @@
+{
+
+  "manifest_version": 2,
+  "name": "Borderify",
+  "version": "1.0",
+
+  "description": "Displays a QR Code for the active website.",
+
+  "browser_action": {
+      "default_icon": {
+        "19": "button/bext.png",
+        "38": "button/bext.png"
+      },
+    "default_title": "InstaShare"
+  },
+
+  "icons": {
+    "48": "icons/bext.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.com/*"],
+      "js": ["borderify.js"]
+    }
+  ]
+
+
+
+}
