@@ -1,4 +1,4 @@
-browser.browserAction.onClicked.addListener(() => {
-	
+browser.browserAction.onClicked.addListener((tab) => {
+console.log(tab.url);
 });
 
