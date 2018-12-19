@@ -10,7 +10,7 @@
   "browser_action": {
       "default_icon": "icons/bext.png",      
       "default_title": "InstaShare",
-      "default_popup": ""
+      "default_popup": "popups/qr.html"
   },
 
   "permissions": [
