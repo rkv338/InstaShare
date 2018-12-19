@@ -1,4 +1,12 @@
+var tab_id;
 browser.browserAction.onClicked.addListener((tab) => {
-console.log(tab.url);
+	tab_id = tab.url;
+	title();
 });
 
+function title () {
+	browser.browserAction.setTitle({
+		title: 'QR Code',
+		tabId: tab_id 
+	});
+}
