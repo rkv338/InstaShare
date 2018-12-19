@@ -20,14 +20,9 @@
 
   "icons": {
     "48": "icons/bext.png"
-  },
+  }
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.com/*"],
-      "js": ["instashare.js"]
-    }
-  ]
+  
 
 
 
